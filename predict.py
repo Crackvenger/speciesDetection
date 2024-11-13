@@ -13,7 +13,7 @@ ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(VIDEOS_PATH_OUT, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
 
-model_path = os.path.join('.', 'runs', 'detect', 'train', 'weights', 'last.pt')
+model_path = os.path.join('.', 'runs', 'detect', 'train4', 'weights', 'last.pt')
 
 
 # Load a model
